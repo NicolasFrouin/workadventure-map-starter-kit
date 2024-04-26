@@ -364,7 +364,7 @@
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 2458, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -387,11 +387,6 @@
                          "name":"foo",
                          "type":"string",
                          "value":"bar"
-                        }, 
-                        {
-                         "name":"price",
-                         "type":"int",
-                         "value":100
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -425,12 +420,6 @@
                  "id":69,
                  "name":"rock",
                  "opacity":1,
-                 "properties":[
-                        {
-                         "name":"price",
-                         "type":"int",
-                         "value":50
-                        }],
                  "type":"tilelayer",
                  "visible":true,
                  "width":31,
@@ -447,9 +436,9 @@
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 576, 0, 0, 557, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 557, 557, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 557, 557, 557, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 576, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -463,17 +452,6 @@
                  "id":70,
                  "name":"gold",
                  "opacity":1,
-                 "properties":[
-                        {
-                         "name":"price",
-                         "type":"int",
-                         "value":200
-                        }, 
-                        {
-                         "name":"priority",
-                         "type":"int",
-                         "value":5
-                        }],
                  "type":"tilelayer",
                  "visible":true,
                  "width":31,
@@ -506,12 +484,6 @@
                  "id":71,
                  "name":"saphire",
                  "opacity":1,
-                 "properties":[
-                        {
-                         "name":"price",
-                         "type":"int",
-                         "value":300
-                        }],
                  "type":"tilelayer",
                  "visible":true,
                  "width":31,
@@ -544,12 +516,6 @@
                  "id":72,
                  "name":"diamond",
                  "opacity":1,
-                 "properties":[
-                        {
-                         "name":"price",
-                         "type":"int",
-                         "value":500
-                        }],
                  "type":"tilelayer",
                  "visible":true,
                  "width":31,
@@ -559,46 +525,6 @@
          "name":"items",
          "opacity":1,
          "type":"group",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":74,
-         "name":"objectItems",
-         "objects":[
-                {
-                 "height":28.6666666666666,
-                 "id":22,
-                 "name":"treeArea",
-                 "rotation":0,
-                 "type":"area",
-                 "visible":true,
-                 "width":29.3333333333333,
-                 "x":224.666666666667,
-                 "y":610
-                }, 
-                {
-                 "height":0,
-                 "id":23,
-                 "name":"treeVar",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"pickedUp",
-                         "type":"bool",
-                         "value":false
-                        }],
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":241.333333333333,
-                 "y":612.666666666667
-                }],
-         "opacity":1,
-         "type":"objectgroup",
          "visible":true,
          "x":0,
          "y":0
@@ -784,17 +710,6 @@
          "y":0
         }, 
         {
-         "draworder":"topdown",
-         "id":73,
-         "name":"inventory",
-         "objects":[],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
          "id":51,
          "layers":[
                 {
@@ -867,56 +782,9 @@
          "visible":true,
          "x":0,
          "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":76,
-         "name":"totalServerValue",
-         "objects":[
-                {
-                 "height":0,
-                 "id":25,
-                 "name":"total",
-                 "point":true,
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":112.364026950493,
-                 "y":397.148715945708
-                }, 
-                {
-                 "height":0,
-                 "id":26,
-                 "name":"quota",
-                 "point":true,
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":112.364026950493,
-                 "y":411.678547016893
-                }, 
-                {
-                 "height":0,
-                 "id":27,
-                 "name":"win",
-                 "point":true,
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":111.395371545747,
-                 "y":403.929303778928
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
         }],
- "nextlayerid":77,
- "nextobjectid":28,
+ "nextlayerid":73,
+ "nextobjectid":20,
  "orientation":"orthogonal",
  "properties":[
         {

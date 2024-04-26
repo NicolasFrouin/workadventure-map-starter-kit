@@ -1,26 +1,29 @@
 import { playerInventory } from "./Inventory";
 import { pickupItemSubscribe } from "./Items";
+import { gameQuota } from "./quota";
+
 
 export function dropzone() {
-  WA.room.onEnterLayer("items/drop").subscribe(() => {
+  WA.room.onEnterLayer("sellingZone").subscribe(() => {
     sellItems();
   });
 }
 
 function sellItems() {
-  console.group("sellItems");
   let total = 0;
-  let pInv = playerInventory(WA.player.state.items as any[]);
-  console.log("inventory: ", pInv.items);
+  if(isNaN(WA.state.total)) {WA.state.total = 0}
 
-  for (let item of pInv.removeAll()) {
-    if (!item) continue;
-    total += item.price;
-    console.log("selling", item.name, "for", item.price);
-    pickupItemSubscribe(item);
-  }
+  gameQuota.then(function() {
+    let pInv = playerInventory(WA.player.state.items as any[]);
+  
+    for (let item of pInv.removeAll()) {
+      if (!item) continue;
+      total += item.price;
+      pickupItemSubscribe(item);
+    }
+    WA.state.saveVariable("total", Number(WA.state.total) + total);
 
-  WA.player.state.saveVariable("items", pInv.items);
-  console.log("total price: ", total);
-  console.groupEnd();
+    WA.player.state.saveVariable("items", pInv.items)
+  });
+;
 }
