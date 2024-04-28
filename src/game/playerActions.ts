@@ -25,6 +25,8 @@ export async function killPlayer(player: RemotePlayerInterface) {
   const nbKilled = WA.state.nbKilled ?? 0;
   WA.state.saveVariable("nbKilled", Number(nbKilled) + 1);
     
+  const killSound = WA.sound.loadSound(`/src/game/sound/killSound.mp3`);
+  killSound.play(undefined);
 }
 
 export function initKilled() {

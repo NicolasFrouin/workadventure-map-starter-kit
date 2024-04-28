@@ -35,7 +35,7 @@ export function initSound() {
   
     setInterval(() => {
       const selectedNumber = Math.random();
-      if (selectedNumber < 0.08) {
+      if (selectedNumber < 0.05) {
         ambientSound.play(undefined);
       }
     }, 5000)

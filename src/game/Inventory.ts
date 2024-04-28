@@ -12,6 +12,9 @@ export const playerInventory = (inventory: Item[] = []) => ({
   addItem: function (item: Item) {
     if (this.items.length < this.maxItems) {
       this.items.push(item);
+
+      const pickupItem = WA.sound.loadSound(`/src/game/sound/pickupItem.mp3`);
+      pickupItem.play(undefined);
     }
     return this;
   },
@@ -20,8 +23,14 @@ export const playerInventory = (inventory: Item[] = []) => ({
     return this;
   },
   removeAll: function* (): Generator<Item | undefined> {
+    if (this.items.length > 0) {
+      const pickupItem = WA.sound.loadSound(`/src/game/sound/pickupItem.mp3`);
+      pickupItem.play(undefined);
+    }
+    
     while (this.items.length > 0) {
       yield this.items.pop();
     }
+        
   },
 });
